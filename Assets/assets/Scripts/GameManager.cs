@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void Deuda()
+    public void AumentarDeuda()
     {
-        //deuda = monedasPerma * 2;
+        deuda = deuda;
     }
 
 }
