@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/coin minigame.unity
     guid: ea44abf0e294f81408c6a4af3848836f
   - enabled: 1
-    path: Assets/Scenes/Tienda}.unity
+    path: Assets/Scenes/Tienda.unity
     guid: a81e569085c51ae4f84f268348146cfb
   m_configObjects: {}

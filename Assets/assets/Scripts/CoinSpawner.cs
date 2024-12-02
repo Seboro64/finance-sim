@@ -20,6 +20,8 @@ public class CoinSpawner : MonoBehaviour
             coin.transform.SetParent(transform);
             float x = Random.Range(-3, 3);
             coin.GetComponent<CorredorMov>().sinCenterX = x;
+            float vel = Random.Range(5, 10);
+            coin.GetComponent<CorredorMov>().speed = vel;
         }
 
         tiempoDRecarga += Time.deltaTime;

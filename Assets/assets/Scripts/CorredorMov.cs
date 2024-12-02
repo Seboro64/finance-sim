@@ -5,7 +5,7 @@ using UnityEngine;
 public class CorredorMov : MonoBehaviour
 {
     public float sinCenterX;
-    [SerializeField] float speed;
+    [SerializeField] public float speed;
 
     private void FixedUpdate()
     {
