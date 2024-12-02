@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
 
     public void AumentarHora()
     {
+        Time.timeScale = 1;
         hora++;
     }
 

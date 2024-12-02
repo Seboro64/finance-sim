@@ -10,6 +10,12 @@ public class CoinMiningManager : MonoBehaviour
     public TextMeshProUGUI textoMonedas;
     public TextMeshProUGUI textoTiempo;
 
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
         tiempo -= Time.deltaTime;
@@ -19,9 +25,13 @@ public class CoinMiningManager : MonoBehaviour
 
         if (tiempo <= 0)
         {
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
 
             GameManager.instance.AumentarMonedas(monedas);
+        }
+        else 
+        {
+            Time.timeScale = 1;
         }
     }
 }

@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2041537317}
         m_TargetAssemblyTypeName: MenuInicial, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: IrACasa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -749,6 +749,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monedasPerma: 5
   deuda: 0
+  dia: 0
+  hora: 0
+  Cama: 0
+  Mesa: 0
+  Librero: 0
+  Refri: 0
+  Tele: 0
+  Planta: 0
+  Fregadero: 0
+  Candelabro: 0
 --- !u!4 &1810091153
 Transform:
   m_ObjectHideFlags: 0
@@ -796,6 +806,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439df623a77c6af4f8e21a6f86f3c8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textoMonedas: {fileID: 0}
+  textoHora: {fileID: 0}
+  textoDeudas: {fileID: 0}
 --- !u!114 &2041537318
 MonoBehaviour:
   m_ObjectHideFlags: 0

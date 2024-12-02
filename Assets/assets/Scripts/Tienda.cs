@@ -97,7 +97,7 @@ public class Tienda : MonoBehaviour
             case "FREG":
                 GameManager.instance.Fregadero = true;
                 break;
-            case "CANDE":
+            case "CANDELABRO":
                 GameManager.instance.Candelabro = true;
                 break;
         }
