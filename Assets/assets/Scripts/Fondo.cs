@@ -13,16 +13,20 @@ public class Fondo : MonoBehaviour
     {
         imagenfondo = GetComponent<UnityEngine.UI.Image>();
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+
+        switch (GameManager.instance.hora)
+        {
+            case 0:
+                imagenfondo.sprite = fondos[0];
+                break;
+            case 1:
+                imagenfondo.sprite = fondos[1];
+                break;
+            case 2:
+                imagenfondo.sprite = fondos[2];
+                break;
+        }
     }
 }

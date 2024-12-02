@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (hora>3)
+        if (hora>=3)
         {
             AumentarDia();
             hora = 0;
