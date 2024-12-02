@@ -153,6 +153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monedasPerma: 0
+  deuda: 0
+  dia: 0
+  hora: 0
+  Cama: 0
+  Mesa: 0
+  Librero: 0
+  Refri: 0
+  Tele: 0
+  Planta: 0
+  Fregadero: 0
+  Candelabro: 0
 --- !u!4 &83427434
 Transform:
   m_ObjectHideFlags: 0
@@ -482,8 +493,9 @@ GameObject:
   - component: {fileID: 666936486}
   - component: {fileID: 666936488}
   - component: {fileID: 666936487}
+  - component: {fileID: 666936489}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -546,6 +558,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666936485}
   m_CullTransparentMesh: 1
+--- !u!114 &666936489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666936485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f91a9ad73d887d42a9a5a89facca7d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fondos: []
 --- !u!1 &940454921
 GameObject:
   m_ObjectHideFlags: 0

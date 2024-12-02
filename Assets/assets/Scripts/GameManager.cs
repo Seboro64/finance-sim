@@ -11,6 +11,18 @@ public class GameManager : MonoBehaviour
 
     public int deuda;
 
+    public int dia;
+
+    public int hora;
+
+    public bool Cama;
+    public bool Mesa;
+    public bool Librero;
+    public bool Refri;
+    public bool Tele;
+    public bool Planta;
+    public bool Fregadero;
+    public bool Candelabro;
 
 
     private void Awake()
@@ -26,6 +38,25 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    private void Update()
+    {
+        if (hora>3)
+        {
+            AumentarDia();
+            hora = 0;
+        }
+    }
+
+    public void AumentarDia()
+    {
+        dia++;
+    }
+
+    public void AumentarHora()
+    {
+        hora++;
     }
 
     public void AumentarDeuda()
@@ -50,6 +81,17 @@ public class GameManager : MonoBehaviour
         if (deuda<0)
         {
             monedasPerma = -deuda;
+        }
+    }
+    public void PegarDeContado(int apagar)
+    {
+        if (monedasPerma<apagar)
+        {
+            return;
+        }
+        else
+        {
+            monedasPerma = monedasPerma - apagar;
         }
     }
 }

@@ -6,8 +6,7 @@ public class RBController : MonoBehaviour
 {
     [Header("Movimento")]
     [SerializeField] private float velocidad;
-    //[Header("Joystick")]
-    //[SerializeField] private JoyMovEventTrigger joystick;
+
     [Header("Limites")]
     public float limitesz;
     public float limitesx;
