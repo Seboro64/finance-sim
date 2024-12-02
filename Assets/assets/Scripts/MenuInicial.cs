@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
-    public void Play()
+    public void IrACasa()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Casa");
     }
-
+    public void IrATienda()
+    {
+        SceneManager.LoadScene("Tienda");
+    }
+    public void IrAChambear()
+    {
+        SceneManager.LoadScene("CoinMining");
+    }
 }

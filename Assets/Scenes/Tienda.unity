@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monedasPerma: 0
+  deuda: 0
 --- !u!4 &116741323
 Transform:
   m_ObjectHideFlags: 0

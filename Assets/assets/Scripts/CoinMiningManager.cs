@@ -20,6 +20,8 @@ public class CoinMiningManager : MonoBehaviour
         if (tiempo <= 0)
         {
             Time.timeScale = 0;
+
+            GameManager.instance.AumentarMonedas(monedas);
         }
     }
 }

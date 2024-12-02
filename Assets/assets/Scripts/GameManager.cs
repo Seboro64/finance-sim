@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 { 
-    private static GameManager instance;
-
+    public static GameManager instance;
 
     public int monedasPerma = 0;
 
@@ -31,7 +30,26 @@ public class GameManager : MonoBehaviour
 
     public void AumentarDeuda()
     {
-        deuda = deuda;
+        deuda = deuda + (deuda / 3);
     }
 
+    public void AumentarMonedas(int suma)
+    {
+        monedasPerma =+ suma;
+    }
+
+    public void SumarDeuda(int suma)
+    {
+        deuda += suma;
+    }
+
+    public void PegarDeuda()
+    {
+        deuda = deuda - monedasPerma;
+        monedasPerma = 0;
+        if (deuda<0)
+        {
+            monedasPerma = -deuda;
+        }
+    }
 }
